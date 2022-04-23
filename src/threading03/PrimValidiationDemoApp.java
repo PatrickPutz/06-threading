@@ -13,6 +13,21 @@ public class PrimValidiationDemoApp {
         PrimValidation prim6 = new PrimValidation(1991999993);
         PrimValidation prim7 = new PrimValidation(1991999999);
 
+        prim1.start();
+        prim2.start();
+        prim3.start();
+        prim4.start();
+        prim5.start();
+        prim6.start();
+        prim7.start();
+
+        prim1.join();
+        prim2.join();
+        prim3.join();
+        prim4.join();
+        prim5.join();
+        prim6.join();
+        prim7.join();
 
     }
 }
