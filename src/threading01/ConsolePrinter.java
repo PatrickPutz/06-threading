@@ -13,7 +13,7 @@ public class ConsolePrinter extends Thread {
             System.out.println(i + ": [identifier: " + identifier + ']');
 
             try {
-                Thread.sleep(10);
+                Thread.sleep(100);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

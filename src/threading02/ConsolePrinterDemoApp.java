@@ -13,8 +13,23 @@ public class ConsolePrinterDemoApp {
         threadA.start();
         threadB.start();
 
-        threadA.join();
-        threadB.join();
+        Thread.sleep(5000);
+
+        //threadA.stop(); should not be used anymore (impolite stopping)
+        //threadB.stop();
+        System.out.println("Abbruch");
+        cpA.pleaseStop = true; // polite stopping
+        cpB.pleaseStop = true;
+
+        //threadA.interrupt(); // shouldn't be used if polite interruption can be used
+        //threadB.interrupt();
+
+        //threadA.join();
+        //threadB.join();
+
+
+
+        System.out.println("Programm ist beendet.");
 
     }
 }
